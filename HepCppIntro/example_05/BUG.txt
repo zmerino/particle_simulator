@@ -1,0 +1,10 @@
+W. H. Bell
+
+This program prints the last number twice when reading the file.  The 
+program is caused by the trailing '\n' character at the end of the last 
+line.  After reading the last number the input file stream is not null and 
+so the loop cycles one last time.
+
+The bug could be fixed by either reading lines from the input stream and 
+then parsing each line or by peaking beyond the \n to look for the eof.
+

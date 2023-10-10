@@ -1,0 +1,50 @@
+# W. H. Bell
+# A Makefile to build FileIO.exe
+
+CC=g++
+TARGET=encoder
+OBJECTS=solution_02.cpp
+
+$(TARGET).exe: $(OBJECTS)
+	@echo "**"
+	@echo "** Linking Executable"
+	@echo "**"
+	$(CC) $(OBJECTS) -o $(TARGET)
+	@echo "**"
+	@echo "** execute ./encoder private_message.txt -e"
+	./encoder private_message.txt -e
+
+# CC=g++
+# TARGET=FileIO
+# OBJECTS=main.o FileIO.o
+
+# $(TARGET).exe: $(OBJECTS)
+# 	@echo "**"
+# 	@echo "** Linking Executable"
+# 	@echo "**"
+# 	$(CC) $(OBJECTS) -o $(TARGET).exe
+
+# clean:
+# 	@rm -f *.o *~
+
+# veryclean: clean
+# 	@rm -f $(TARGET).exe
+
+# %.o: %.cc
+# 	@echo "**"
+# 	@echo "** Compiling C++ Source" 
+# 	@echo "**"
+# 	$(CC) -c $(INCFLAGS) $< 
+
+# # This is a comment line
+# CC=g++
+# # CFLAGS will be the options passed to the compiler.
+# CFLAGS=-c –Wall
+# OBJECTS = main.o hello.o factorial.o
+# all: prog
+# prog: $(OBJECTS)
+# $(CC) $(OBJECTS) -o prog
+# %.o: %.cpp
+# $(CC) $(CFLAGS) $<
+# clean:
+# rm -rf *.o
