@@ -17,7 +17,7 @@ int main(int argc, char *argv[]){
     else{
 
         // int mask = 0xA3; // a number less that 255
-        char key[] = "abc";
+        char  key[] = "abc";
         // char c,a,b; // character to be read and encrypted
 
         switch (argv[2][1])
@@ -34,7 +34,7 @@ int main(int argc, char *argv[]){
             break;
         }
         
-        default:
+        default:        
             printf("\t ********************** NOTE ************************ \n");
             printf("\t Encrypt or decrypt message by calling: \n\t\t ./encoder <filename> [encrypt/decrypt] \n");
             printf("\t Where [encrypt/decrypt] accepts: \n\t\t -e for encrypt, -d for decrypt \n");
