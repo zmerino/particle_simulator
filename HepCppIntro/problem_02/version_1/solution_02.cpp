@@ -9,34 +9,21 @@ using namespace std;
 
 void format_message(void){
     printf("\t ********************** NOTE ************************ \n");
-    printf("\t Encrypt or decrypt message by calling: \n");
-    printf("\t\t ./encoder <filename> -e <none> -m <int> -k <string> -s <int> \n");
-
-    printf("\t Where: \n");
-
-    printf("\t\t -e <none>: \n");
-    printf("\t\t\t -e for encrypt, -d for decrypt. \n");
-
-    printf("\t\t -m <int>: \n");
-    printf("\t\t\t methods include 1, 2, 3, etc. in general, \n\t\t\t larger the integer the more advanced the encryption. \n");
-    
-    printf("\t\t -k <string>: \n");
-    printf("\t\t\t string of one character or more to use for encryption/decryption. \n");
-
-    printf("\t\t -s <int>: \n");
-    printf("\t\t\t Steps to use during encryption (if applicable). \n");
-
+    printf("\t Encrypt or decrypt message by calling: \n\t\t ./encoder <filename> [encrypt/decrypt] [key method] \n");
+    printf("\t Where [encrypt/decrypt] accepts: \n\t\t -e for encrypt, -d for decrypt \n");
+    printf("\t Where [key method]] accepts: \n\t\t -k 1, 2, etc. \n");
     printf("\t ********************** NOTE ************************ \n");
 }
 
 void divert_method(string key){
+    
+
 }
 
 int main(int argc, char *argv[]){
 
-    // get flag -m i.e. encryption method
+    
     char method_type = *argv[4];
-
     string key;
 
     if (argc < 2 || argc > 5){

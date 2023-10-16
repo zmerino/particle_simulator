@@ -1,6 +1,6 @@
 
 CC=g++
-TARGET=encoder
+TARGET=solution_02
 OBJECTS=solution_02.o cryptography.o
 
 $(TARGET).exe: $(OBJECTS)
@@ -9,13 +9,12 @@ $(TARGET).exe: $(OBJECTS)
 	@echo "**"
 	$(CC) $(OBJECTS) -o $(TARGET)
 	@echo "**"
-	@echo "** execute ./encoder private_message.txt -e"
-	./encoder private_message.txt -e
+	@echo "** EXECUTING: ./$(TARGET) private_message.txt -e -m 2 -k "ABC" -s 3"
+	@echo "------------------------------------------------"
+	./$(TARGET) private_message.txt -e -m 2 -k "ABC" -s 3
 
 clean:
 	@rm -f *.o *~
-
-veryclean: clean
 	@rm -f $(TARGET)
 
 %.o: %.cc

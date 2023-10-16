@@ -10,6 +10,10 @@
         "span": "cpp",
         "regex": "cpp",
         "utility": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "fstream": "cpp",
+        "sstream": "cpp",
+        "iostream": "cpp",
+        "typeinfo": "cpp"
     }
 }
