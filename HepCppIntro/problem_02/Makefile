@@ -1,7 +1,7 @@
 
 CC=g++
-TARGET=solution_02
-OBJECTS=solution_02.o cryptography.o
+TARGET=xor_cypher
+OBJECTS=xor_cypher.o cryptography.o
 
 $(TARGET).exe: $(OBJECTS)
 	@echo "**"
@@ -11,7 +11,12 @@ $(TARGET).exe: $(OBJECTS)
 	@echo "**"
 	@echo "** EXECUTING: ./$(TARGET) private_message.txt -e -m 2 -k "ABC" -s 3"
 	@echo "------------------------------------------------"
-	./$(TARGET) private_message.txt -e -m 2 -k "ABC" -s 3
+	# ./$(TARGET) private_message.txt -e -m 2 -k "ABC" -s 3
+	#./$(TARGET) --help
+	./$(TARGET) --defaults
+	# ./$(TARGET) private_message.txt -e -m 2 -k "ABC" -s 3
+	# ./$(TARGET) private_message_encrypted.txt -e -m 2 -k "ABC" -s 3
+	# ./$(TARGET) private_message.txt
 
 clean:
 	@rm -f *.o *~
