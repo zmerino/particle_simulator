@@ -1,11 +1,6 @@
-# particle_simulator
+# XOR Cypher for Encrypting text files
 
-Simple simulator to track 2D particle trajectories
+A simple module to apply various XOR encryption protocols  to text files.
 
-
-# Version 0.0
-
-Start creating two particles with different masses and initial velocities. Simulate their trajectories and visualize it.
-
-- No particle class
-- single c++ file
+This is primarily a hobby project to practice C++ programming and learning about
+various encryption schemes.
